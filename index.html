@@ -9,39 +9,50 @@
   <title>돼지파티 초대장</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #ffd700;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+  font-family: 'Arial', sans-serif;
+  background-color: #ffd700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-    .invitation-card {
-      /* background-color: #ffffff; */
-      background-image:url("https://i.ibb.co/yfqpv9p/gingerbread-candies-dark-1.png");
-      border-radius: 0px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
-      width: 1000px;
-      height: 800px;
-      text-align: center;
-      margin-top: -50px; 
-      
+.invitation-card {
+  background-image: url("https://i.ibb.co/yfqpv9p/gingerbread-candies-dark-1.png");
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: -50px;
+}
 
-    }
+.header,
+.content {
+  font-family: 'Black Han Sans', sans-serif, 'Gasoek One', sans-serif, 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height for better readability */
+}
 
-    .header {
-      background-color: #de2626;
-      color: #ffffff;
-      padding: 1%;
-    }
+.header {
+  background-color: #de2626;
+  color: #ffffff;
+  padding: 1%;
+}
 
-    .content {
-      padding: 0px;
-    }
+.content {
+  padding: 20px; /* Add some padding for better spacing */
+}
 
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .invitation-card {
+    width: 90%;
+    margin-top: 0;
+  }
+}
   </style>
 </head>
 <body>
